@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>POC party town</h1>
+
+    <button id="counter">click count</button>
+    <div id="result">
+        
+    </div>
+    <input type="text" name="test" id="">
+</body>
+
+<script src="/~partytown/partytown.js">
+</script>
+
+<script type="text/partytown">
+    let i = 0;
+    document.getElementById("counter").onclick = function() {
+        console.log('click')
+        i++;
+        for (let j =0 ; j < 10_000_000_000; j++) {
+
+        }
+        document.getElementById("result").innerText = i
+    }
+
+</script>
+
+</html>
